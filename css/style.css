@@ -19,6 +19,7 @@ h2{
   font-weight: 700;
   font-size: 45px;
   margin: 0;
+  padding-top: 20px;
 }
 
 h3{
@@ -338,7 +339,7 @@ a{
   margin: 0 auto;
   padding: 50px;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   background-color: #F8F9FA;
 }
 
@@ -350,10 +351,6 @@ a{
   flex-direction: column;
 }
 
-.products--header h2{
-  order: -1;
-  margin-bottom: -90px;
-}
 
 .products--feature{
   display: flex;
@@ -384,12 +381,16 @@ a{
 
 .products--standard{
   width: 35%;
-  padding: 50px;
+  padding: 40px;
+  margin: 25px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px #E9ECEF;
 }
 
 .products--standard:nth-child(1){
-  padding-left: 0px;
-  padding-right: 100px;
+  padding: 40px;
+  margin: 25px;
 }
 
 .products--standard svg{
@@ -397,10 +398,14 @@ a{
   fill: #1E90FF;
 }
 
+.products--standard:hover{
+  box-shadow: 0px 0px 25px #DEE2E6;
+}
+
 @media (max-width: 875px) {
   .products--header h2{
     order: -1;
-    margin-bottom: 75px;
+    margin-bottom: 25px;
   }
 
   .products--feature{
@@ -429,22 +434,20 @@ a{
   .products--standard__wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   .products--standard{
     width: 100%;
-    padding: 50px;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 30px;
+    margin: 25px;
+    margin-left: 0px;
   }
 
   .products--standard:nth-child(1){
-    padding: 50px;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 30px;
+    margin: 25px;
+    margin-left: 0px;
   }
 }
 
@@ -586,10 +589,6 @@ a{
   background-color: white;
 }
 
-.careers:nth-child(odd){
-  background-color: #F8F9FA;
-}
-
 .careers--wrapper{
   max-width: 1200px;
   margin: auto;
@@ -598,13 +597,13 @@ a{
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 75px;
   padding-bottom: 75px;
 }
 
 .careers--copy{
-  width: 55%;
+  width: 35%;
 }
 
 .careers--copy__logos{
@@ -624,7 +623,19 @@ a{
 }
 
 .careers--list{
-  width: 35%;
+  width: 55%;
+}
+
+.careers--list__role{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.careers--list__role svg{
+  height: 30px;
+  margin: 15px;
+  fill: #71BF43;
 }
 
 @media (max-width: 875px) {
@@ -632,6 +643,7 @@ a{
     width: 100%;
     order: 2;
   }
+
   .careers--list {
     width: 100%;
   }
