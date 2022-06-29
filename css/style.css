@@ -60,6 +60,7 @@ button{
   border-radius: 3px;
   padding: 15px;
   font-weight: 400;
+  font-size: 18px;
   color: white;
   border: 0px;
   height: 50px;
@@ -93,9 +94,9 @@ a{
 
 .nav--links{
   display: grid;
-  grid-template-columns: 150px 150px 150px 150px;
-  justify-items: center;
-  justify-content: end;
+  grid-template-columns: 150px 175px 150px 150px 150px;
+  justify-items: flex-end;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -235,7 +236,6 @@ a{
   width: 100%;
   margin: 0 auto;
   padding: 50px;
-  margin-bottom: 75px;
 }
 
 .hero--wrapper{
@@ -263,6 +263,7 @@ a{
   font-size: 60px;
   color: black;
   margin: 0;
+  line-height: 1.15;
 }
 
 
@@ -279,6 +280,7 @@ a{
     width: 100%;
     margin: 0 auto;
     padding: 50px;
+    padding-bottom: 25px;
     padding-top: 10px;
   }
 
@@ -299,7 +301,6 @@ a{
   .hero--copy p{
     margin: 0;
     padding-top: 15px;
-    padding-bottom: 30px;
     text-align: center;
   }
 
@@ -332,6 +333,65 @@ a{
   color: #1E90FF;
   margin: 0;
  }
+}
+
+.subhero{
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 75px;
+}
+
+.subhero--wrapper{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.subhero--wrapper img{
+  width: 100%;
+}
+
+.subhero--wrapper__point{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.subhero--wrapper__point svg{
+  height: 30px;
+  margin: 15px;
+  fill: #71BF43;
+}
+
+@media (max-width: 875px) {
+  .subhero{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 50px;
+  }
+
+  .subhero--wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .subhero--wrapper__point{
+    order: 0;
+    width: 50%;
+  }
+
+  .subhero--wrapper__point img{
+    width: 80%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
 }
 
 .products{
@@ -403,6 +463,11 @@ a{
 }
 
 @media (max-width: 875px) {
+  .products{
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
   .products--header h2{
     order: -1;
     margin-bottom: 25px;
@@ -602,24 +667,12 @@ a{
   padding-bottom: 75px;
 }
 
+.careers--wrapper img{
+  width: 100%;
+}
+
 .careers--copy{
   width: 35%;
-}
-
-.careers--copy__logos{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.careers--copy__logos img{
-  padding: 30px;
-  padding-left: 0;
-  padding-bottom: 0;
-  padding-top: 15px;
-  width: 25%;
 }
 
 .careers--list{
@@ -639,17 +692,18 @@ a{
 }
 
 @media (max-width: 875px) {
+  .careers--wrapper{
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
   .careers--copy{
     width: 100%;
-    order: 2;
+    padding-bottom: 25px;
   }
 
   .careers--list {
     width: 100%;
-  }
-
-  .careers--list__role{
-    order: 0;
   }
 
   .careers--list__role img{
