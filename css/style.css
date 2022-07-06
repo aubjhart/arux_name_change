@@ -368,6 +368,10 @@ a{
   fill: #71BF43;
 }
 
+.subhero--wrapper__point h2{
+  text-align: left;
+}
+
 @media (max-width: 875px) {
   .subhero{
     width: 100%;
