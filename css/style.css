@@ -94,7 +94,7 @@ a{
 
 .nav--links{
   display: grid;
-  grid-template-columns: 150px 175px 150px 150px 150px;
+  grid-template-columns: 150px;
   justify-items: flex-end;
   justify-content: flex-end;
   align-items: center;
@@ -169,7 +169,7 @@ a{
 
   .nav--links{
     display: none;
-    grid-template-columns: 115px 115px 245px;
+    grid-template-columns: 115px;
     justify-items: center;
     justify-content: end;
     align-items: center;
@@ -236,6 +236,7 @@ a{
   width: 100%;
   margin: 0 auto;
   padding: 50px;
+  padding-bottom: 100px;
 }
 
 .hero--wrapper{
@@ -342,12 +343,16 @@ a{
   margin-bottom: 75px;
 }
 
+.subhero h3{
+  padding-top: 13px;
+}
+
 .subhero--wrapper{
   max-width: 1200px;
   margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .subhero--wrapper img{
@@ -656,6 +661,8 @@ a{
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: white;
 }
 
@@ -668,8 +675,6 @@ a{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 75px;
-  padding-bottom: 75px;
 }
 
 .careers--wrapper img{
@@ -680,8 +685,15 @@ a{
   width: 35%;
 }
 
+.careers--copy h2{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .careers--list{
   width: 55%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .careers--list__role{
