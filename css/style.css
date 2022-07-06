@@ -370,6 +370,7 @@ a{
 
 .subhero--wrapper__point h2{
   text-align: left;
+  padding-top: 0;
 }
 
 @media (max-width: 875px) {
