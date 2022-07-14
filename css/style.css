@@ -396,6 +396,7 @@ a{
 
   .subhero--wrapper__point{
     order: 0;
+    width: 100%;
   }
 
   .subhero--wrapper__point img{
