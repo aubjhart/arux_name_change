@@ -388,6 +388,10 @@ a{
     margin-bottom: 50px;
   }
 
+  .subhero h2 {
+    text-align: center;
+  }
+
   .subhero--wrapper{
     display: flex;
     flex-direction: column;
